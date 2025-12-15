@@ -1,0 +1,44 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "Voice to Text",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "clipboard": {
+        "all": true,
+        "readText": true,
+        "writeText": true
+      },
+      "globalShortcut": {
+        "all": true
+      }
+    },
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' wss://api.deepgram.com https://api.deepgram.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Voice to Text",
+        "width": 700,
+        "height": 600,
+        "minWidth": 500,
+        "minHeight": 400
+      }
+    ]
+  }
+}
