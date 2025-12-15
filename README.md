@@ -2,6 +2,11 @@
 
 A desktop application built with Tauri + React that converts speech to text using Deepgram's real-time API.
 
+## SCREENSHOTS
+<img width="1901" height="877" alt="1" src="https://github.com/user-attachments/assets/fc62022c-ef68-4b86-8a75-1243b182381b" />
+<img width="1917" height="882" alt="2" src="https://github.com/user-attachments/assets/aae92e2c-96e3-41ba-ba60-168cc7050df0" />
+
+
 ## Features
 
 - **Push-to-Talk**: Hold button or use keyboard shortcut to record
